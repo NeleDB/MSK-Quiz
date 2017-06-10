@@ -1,0 +1,29 @@
+{
+  "vragen": [
+    {
+      "id": 0,
+      "vraag": "Wat verkies jij? A of B",
+      "antwoorden": ["A", "B"]
+    },
+    {
+      "id": 1,
+      "vraag": "Wat verkies jij? C of D",
+      "antwoorden": ["C", "D"]
+    },
+    {
+      "id": 2,
+      "vraag": "Wat verkies jij? E of F",
+      "antwoorden": ["E", "F"]
+    },
+    {
+      "id": 3,
+      "vraag": "Wat verkies jij? G of H",
+      "antwoorden": ["G", "H"]
+    },
+    {
+      "id": 4,
+      "vraag": "Wat verkies jij? I of J",
+      "antwoorden": ["I", "J"]
+    }
+  ]
+}

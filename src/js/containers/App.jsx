@@ -4,24 +4,21 @@ import {string} from 'prop-types';
 import {inject, observer} from 'mobx-react';
 import DevTools from 'mobx-react-devtools';
 
-import {Route} from 'react-router-dom';
-import Home from './Home';
+import Quiz from './Quiz';
+
 
 const App = ({name}) => (
 
   <section>
 
-    {process.env.NODE_ENV !== `production` ? <DevTools/> : null}
+    {process.env.NODE_ENV !== `production` ? <DevTools /> : null}
 
     <header>
       <h1>Hello, {name}</h1>
     </header>
 
     <section>
-      <Route
-        exact path='/'
-        component={Home}
-      />
+      <Quiz />
     </section>
 
   </section>
