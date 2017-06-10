@@ -8,13 +8,14 @@ export default {
       .then(r => r.json());
   },
 
-  create: answers => {
+  create: (answers, email) => {
     console.log(answers);
     const method = `POST`;
     const body = new FormData();
     answers.forEach(a =>
       body.append(`answers`, a)
     );
+    body.append(`email`, email);
     return fetch(url, {method, body})
       .then(r => r.json());
   },

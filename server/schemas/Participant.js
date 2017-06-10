@@ -5,6 +5,11 @@ const schema = {
     type: Array,
     required: true,
     validation: Joi.array()
+  },
+  email: {
+    type: String,
+    required: true,
+    validation: Joi.string()
   }
 };
 

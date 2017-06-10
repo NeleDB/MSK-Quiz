@@ -1,13 +1,12 @@
 import React from 'react';
-import {string} from 'prop-types';
-
-import {inject, observer} from 'mobx-react';
 import DevTools from 'mobx-react-devtools';
+import {Route} from 'react-router-dom';
 
 import Quiz from './Quiz';
+import Send from './Send';
 
 
-const App = ({name}) => (
+const App = () => (
 
   <section>
 
@@ -18,21 +17,18 @@ const App = ({name}) => (
     </header>
 
     <section>
-      <Quiz />
+      <Route
+        exact path='/'
+        component={Quiz}
+      />
+      <Route
+        exact path='/send'
+        component={Send}
+      />
     </section>
 
   </section>
 
 );
 
-App.propTypes = {
-  name: string.isRequired
-};
-
-export default inject(
-  ({store}) => ({
-    name: store.name
-  })
-)(
-  observer(App)
-);
+export default App;

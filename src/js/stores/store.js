@@ -1,6 +1,7 @@
 import {observable, action} from 'mobx';
 import participantsAPI from '../lib/api/participants';
 import data from '../../assets/data/quiz.json';
+import {browserHistory} from 'react-router';
 
 
 class Store {
@@ -27,8 +28,8 @@ class Store {
     this.answers.push(this.selectedAnswer);
 
     if (this.currentQuestion + 1 === data.vragen.length) {
-      console.log(this.answers);
-      participantsAPI.create(this.answers).then(a => console.log(a));
+      // window.location.pathname = `/send`;
+      browserHistory.push(`/end`);
     }
     this.currentQuestion++;
   }
@@ -36,6 +37,12 @@ class Store {
   @action
   handleAnswer = answer => {
     this.selectedAnswer = answer;
+  }
+
+  @action
+  handleEmail = email => {
+    console.log(this.answers);
+    participantsAPI.create(this.answers, email).then(a => console.log(a));
   }
 
 }
