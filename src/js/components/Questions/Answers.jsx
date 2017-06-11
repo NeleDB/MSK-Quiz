@@ -1,10 +1,10 @@
 import React from 'react';
-import {array, func} from 'prop-types';
+import {array, func, string} from 'prop-types';
 import Answer from './Answer';
 import {inject, observer} from 'mobx-react';
 
 
-const Answers = ({antwoorden, nextQuestion}) => {
+const Answers = ({antwoorden, nextQuestion, selectedAnswer}) => {
 
   const handleClickNext = e => {
     e.preventDefault();
@@ -16,24 +16,25 @@ const Answers = ({antwoorden, nextQuestion}) => {
       <ul>
         {
           antwoorden.map(a => (
-            <Answer key={antwoorden.indexOf(a)} antwoord={a} />
+            <Answer key={antwoorden.indexOf(a)} antwoord={a.id} />
           ))
         }
       </ul>
-      <button onClick={handleClickNext}>Next Question</button>
+      <button onClick={handleClickNext} disabled={selectedAnswer === `` ? `disabled` : ``}>Next Question</button>
     </div>
   );
 };
 
 Answers.propTypes = {
   antwoorden: array.isRequired,
-  nextQuestion: func.isRequired
+  nextQuestion: func.isRequired,
+  selectedAnswer: string.isRequired
 };
 
 export default inject(
   ({store}) => {
-    const {nextQuestion} = store;
-    return {nextQuestion};
+    const {nextQuestion, selectedAnswer} = store;
+    return {nextQuestion, selectedAnswer};
   }
 )(
   observer(Answers)

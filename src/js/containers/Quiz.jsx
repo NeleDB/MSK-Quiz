@@ -2,9 +2,14 @@
 import React from 'react';
 import Questions from '../components/Questions';
 import {inject, observer} from 'mobx-react';
-import {number} from 'prop-types';
+import {number, bool} from 'prop-types';
+import Send from '../components/Send';
 
-const Quiz = ({currentQuestion}) => {
+const Quiz = ({currentQuestion, lastAnswer}) => {
+
+  if (lastAnswer) {
+    return <Send />;
+  }
 
   return (
     <div>
@@ -14,13 +19,14 @@ const Quiz = ({currentQuestion}) => {
 };
 
 Quiz.propTypes = {
-  currentQuestion: number.isRequired
+  currentQuestion: number.isRequired,
+  lastAnswer: bool.isRequired
 };
 
 export default inject(
   ({store}) => {
-    const {currentQuestion} = store;
-    return {currentQuestion};
+    const {currentQuestion, lastAnswer} = store;
+    return {currentQuestion, lastAnswer};
   }
 )(
   observer(Quiz)

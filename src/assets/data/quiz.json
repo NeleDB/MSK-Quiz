@@ -2,28 +2,74 @@
   "vragen": [
     {
       "id": 0,
-      "vraag": "Wat verkies jij? A of B",
-      "antwoorden": ["A", "B"]
+      "vraag": "Eet je liever een ijsje met spikkeltjes, of een vanille ijsje?",
+      "antwoorden": [
+        {
+          "id": "A",
+          "uitleg": "Je houdt van veel details, dit wil zeggen dat je vaak op zoek gaat naar de kleine elementen in een schilderij. Dit kan zowel positief zijn als negatief, het kan soms al eens voorvallen dat je hierdoor veel tijd verliest."
+        },
+        {
+          "id": "B",
+          "uitleg": "Je gaat niet vaak zoeken naar details in een schilderij. Je zal u eerder baseren op de uitstraling en het verhaal van het schilderij dan op de details. Hierdoor mis je soms belangrijke elementen die van groot belang zijn om het verhaal te begrijpen."
+
+        }
+      ]
     },
     {
       "id": 1,
-      "vraag": "Wat verkies jij? C of D",
-      "antwoorden": ["C", "D"]
+      "vraag": "Wat spreekt er je meer aan?",
+      "antwoorden": [
+        {
+          "id": "C",
+          "uitleg": "Kleuren, Kleuren, Kleuren, dat is wat jij het liefste hebt. ‘A colorful day is a beautiful day’ is dan ook jouw motto. Maar wist je dat er in het MSK ook veel kleur hangt?"
+        },
+        {
+          "id": "D",
+          "uitleg": "Jij bent diegene die zwart verkiest boven elk ander kleur. Je draagt het dan ook met heel veel fierheid en stijl. Maar wist je dat er in het MSK ook veel kunst hangt die helemaal jouw stijl zijn?"
+        }
+      ]
     },
     {
       "id": 2,
-      "vraag": "Wat verkies jij? E of F",
-      "antwoorden": ["E", "F"]
+      "vraag": "Door welke bril wil jij het leven bekijken?",
+      "antwoorden": [
+        {
+          "id": "E",
+          "uitleg": "Voor jou moet het niet altijd de realiteit zijn, er mag wat fantasie in zitten. Hoe uitdagender een schilderij is, hoe liever. "
+        },
+        {
+          "id": "F",
+          "uitleg": "De realiteit is hetgeen wat jou het meeste boeit. Hoe meer werkelijkheid in een schilderij, hoe liever. "
+        }
+      ]
     },
     {
       "id": 3,
-      "vraag": "Wat verkies jij? G of H",
-      "antwoorden": ["G", "H"]
+      "vraag": "Hoe beluister jij het liefst je muziek?",
+      "antwoorden": [
+        {
+          "id": "G",
+          "uitleg": "Bij MSK zit je zeker goed als je graag dingen bijleert over de geschiedenis. We hebben enkele pronkstukken hangen die zeker in de smaak zullen vallen!"
+        },
+        {
+          "id": "H",
+          "uitleg": "Wist je dat het MSK ook veel moderne kunst heeft hangen? Je ziet liever moderne kunst dan de oudere kunst. Kom zeker eens langs met jouw match om deze kunstwerken te bezichtigen."
+        }
+      ]
     },
     {
       "id": 4,
-      "vraag": "Wat verkies jij? I of J",
-      "antwoorden": ["I", "J"]
+      "vraag": "Welke foto beschrijft het best hoe je je voelt?",
+      "antwoorden": [
+        {
+          "id": "I",
+          "uitleg": "Je bent al gelukkiger geweest in het leven, maar we zijn ervan overtuigd dat jouw buddy jou  kan opfleuren."
+        },
+        {
+          "id": "J",
+          "uitleg": "Je geniet van het leven en voelt je geweldig. Deel jouw geluk met iemand anders, en beleef een leuke tijd met jouw buddy."
+        }
+      ]
     }
   ]
 }

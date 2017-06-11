@@ -1,34 +1,31 @@
 import React from 'react';
 import DevTools from 'mobx-react-devtools';
-import {Route} from 'react-router-dom';
+import {observer, inject} from 'mobx-react';
+import {object} from 'prop-types';
+
 
 import Quiz from './Quiz';
-import Send from './Send';
+
+const App = () => {
+  return (
+      <section>
+
+        {process.env.NODE_ENV !== `production` ? <DevTools /> : null}
+
+        <section>
+            <Quiz />
+        </section>
+
+      </section>
+  );
+};
 
 
-const App = () => (
+App.propTypes = {
+  store: object.isRequired
+};
 
-  <section>
 
-    {process.env.NODE_ENV !== `production` ? <DevTools /> : null}
-
-    <header>
-      <h1>Hello, {name}</h1>
-    </header>
-
-    <section>
-      <Route
-        exact path='/'
-        component={Quiz}
-      />
-      <Route
-        exact path='/send'
-        component={Send}
-      />
-    </section>
-
-  </section>
-
+export default inject(`store`)(
+  observer(App)
 );
-
-export default App;
