@@ -1,41 +1,31 @@
 import React from 'react';
-import {string} from 'prop-types';
-
-import {inject, observer} from 'mobx-react';
 import DevTools from 'mobx-react-devtools';
+import {observer, inject} from 'mobx-react';
+import {object} from 'prop-types';
 
-import {Route} from 'react-router-dom';
-import Home from './Home';
 
-const App = ({name}) => (
+import Quiz from './Quiz';
 
-  <section>
+const App = () => {
+  return (
+      <section>
 
-    {process.env.NODE_ENV !== `production` ? <DevTools/> : null}
+        {process.env.NODE_ENV !== `production` ? <DevTools /> : null}
 
-    <header>
-      <h1>Hello, {name}</h1>
-    </header>
+        <section>
+            <Quiz />
+        </section>
 
-    <section>
-      <Route
-        exact path='/'
-        component={Home}
-      />
-    </section>
-
-  </section>
-
-);
-
-App.propTypes = {
-  name: string.isRequired
+      </section>
+  );
 };
 
-export default inject(
-  ({store}) => ({
-    name: store.name
-  })
-)(
+
+App.propTypes = {
+  store: object.isRequired
+};
+
+
+export default inject(`store`)(
   observer(App)
 );
