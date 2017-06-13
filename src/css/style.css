@@ -2,19 +2,87 @@
 @import 'vars';
 
 html {
-  background-color: var(--bg-color);
+  background-color: var(--main-pink);
 }
 
 body {
-  font-family: Roboto;
+  font-family: freightmedium;
   font-size: 1.6rem;
-  margin: 2rem;
-}
-
-header {
-  margin: 2rem 0;
+  font-weight: 600;
 }
 
 h1 {
+  font-family: Denmark;
   font-size: 3rem;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-red);
+}
+
+.hidden {
+  display: none;
+}
+
+.logo {
+  position: relative;
+  z-index: 12;
+  background-image: url(../assets/svg/logo-site.svg);
+  background-repeat: no-repeat;
+  height: 10rem;
+  margin-left: 12rem;
+  padding-top: 3rem;
+}
+
+.header {
+  padding-top: 5rem;
+  background:
+    url(../assets/svg/detail-fold.svg),
+    linear-gradient(to bottom, var(--main-red) 90%, var(--main-red) 90%, var(--main-pink) 90%);
+  background-repeat: no-repeat;
+  background-position: 80% 0%;
+}
+
+.button-light {
+  background-image: url(../assets/svg/btn-light-bg.svg);
+  background-size: cover;
+  padding: .5rem 2rem;
+  font-size: 1.8rem;
+
+  &:hover {
+    transition: background-image 100ms;
+    transition-timing-function: ease-in;
+    background-image: url(../assets/svg/btn-hover.svg);
+    color: white;
+  }
+}
+
+.fold {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.fold-text {
+  margin-bottom: 15rem;
+  margin-left: 5rem;
+  width: 27rem;
+}
+
+.fold-title {
+  color: white;
+  margin-bottom: 3rem;
+
+  &::after {
+    content: url(../assets/svg/decoration.svg);
+    height: 100%;
+    padding-left: 1.5rem;
+  }
+}
+
+.fold-img {
+  padding-top: 2rem;
+  margin-left: -5rem;
 }
