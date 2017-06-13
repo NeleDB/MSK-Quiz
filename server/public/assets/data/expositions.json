@@ -1,0 +1,25 @@
+{
+  "expositions": [
+    {
+      "id":0,
+      "title": "Metafloristiek: 22.04.16 - 31.10.18",
+      "explain": "Wegdromen in een denkbeeldige natuur",
+      "link": "https://www.mskgent.be/nl/tentoonstellingen/metafloristiek",
+      "img": "metafloristiek"
+    },
+    {
+      "id":1,
+      "title": "Restauratie Lam Gods: 01.10.12 - 31.12.19",
+      "explain": "Sinds 2012 worden de panelen van het Lam Gods gerestaureerd in het MSK.",
+      "link": "https://www.mskgent.be/nl/tentoonstellingen/restauratie-lam-gods",
+      "img": "lam-gods"
+    },
+    {
+      "id":2,
+      "title": "Written Room: 11.02.17 - 31.12.18",
+      "explain": "Door Iraanse kunstenaar Parastou Forouhar",
+      "link": "https://www.mskgent.be/nl/tentoonstellingen/written-room",
+      "img": "written-room"
+    }
+  ]
+}

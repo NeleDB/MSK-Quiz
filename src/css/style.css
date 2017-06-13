@@ -131,6 +131,7 @@ a.tentoonstelling-title {
     transition: color 100ms;
     transition-timing-function: ease-in-out;
     color: var(--main-red);
+    cursor: pointer;
   }
 }
 
