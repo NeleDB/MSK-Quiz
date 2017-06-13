@@ -8,12 +8,14 @@ html {
 body {
   font-family: freightmedium;
   font-size: 1.6rem;
+  line-height: 1.9rem;
   font-weight: 600;
 }
 
 h1 {
   font-family: Denmark;
   font-size: 3rem;
+  line-height: 3.6rem;
   font-weight: 400;
 }
 
@@ -30,9 +32,10 @@ a {
   position: relative;
   z-index: 12;
   background-image: url(../assets/svg/logo-site.svg);
+  background-size: 10%;
   background-repeat: no-repeat;
   height: 10rem;
-  margin-left: 12rem;
+  margin-left: 10rem;
   padding-top: 3rem;
 }
 
@@ -40,7 +43,7 @@ a {
   padding-top: 5rem;
   background:
     url(../assets/svg/detail-fold.svg),
-    linear-gradient(to bottom, var(--main-red) 90%, var(--main-red) 90%, var(--main-pink) 90%);
+    linear-gradient(to bottom, var(--main-red) 90%, var(--main-red) 90%, var(--main-pink) 90%, var(--main-pink) 100%);
   background-repeat: no-repeat;
   background-position: 80% 0%;
 }
@@ -48,14 +51,15 @@ a {
 .button-light {
   background-image: url(../assets/svg/btn-light-bg.svg);
   background-size: cover;
-  padding: .5rem 2rem;
-  font-size: 1.8rem;
+  padding: .5rem 1.4rem;
+  box-shadow: .5rem .8rem 2rem var(--shadow-red);
 
   &:hover {
     transition: background-image 100ms;
     transition-timing-function: ease-in;
     background-image: url(../assets/svg/btn-hover.svg);
     color: white;
+    box-shadow: .5rem .8rem 2rem var(--shadow-red2);
   }
 }
 
@@ -83,6 +87,90 @@ a {
 }
 
 .fold-img {
-  padding-top: 2rem;
-  margin-left: -5rem;
+  padding-top: -1rem;
+  margin-left: -8rem;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.date-title {
+  color: black;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  max-width: 40rem;
+
+  &::after {
+    content: url(../assets/svg/decoration.svg);
+    height: 100%;
+    padding-left: 1.5rem;
+  }
+}
+
+.line {
+  border-bottom: .5rem solid black;
+}
+
+.dates-text {
+  padding-left: 20rem;
+}
+
+.tentoonstelling {
+  margin-top: 2.5rem;
+}
+
+a.tentoonstelling-title {
+  font-family: freightsemibold;
+  font-size: 2rem;
+  color: black;
+
+  &:hover {
+    transition: color 100ms;
+    transition-timing-function: ease-in-out;
+    color: var(--main-red);
+  }
+}
+
+.tentoonstelling-desc {
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+
+.dates-tentoonstellingen {
+  margin-bottom: 4rem;
+}
+
+.button-dark {
+  background-image: url(../assets/svg/btn-dark-bg.svg);
+  background-size: cover;
+  padding: .5rem 2rem;
+  font-size: 1.8rem;
+  color: white;
+
+  &:hover {
+    transition: background-image 100ms;
+    transition-timing-function: ease-in;
+    background-image: url(../assets/svg/btn-hover.svg);
+    color: white;
+  }
+}
+
+.stats {
+  background-color: var(--main-red);
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+}
+
+.stats-txt {
+  color: white;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
 }

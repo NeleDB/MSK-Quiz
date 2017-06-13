@@ -21,40 +21,41 @@ const Home = () => {
       </header>
       <section className='dates'>
         <div className='dates-text'>
-          <h1 className='date-title'>Neem je match mee naar één van deze tentoonstellingen</h1>
+          <h1 className='date-title'>Neem je match <br />mee naar één van <br />deze tentoonstellingen</h1>
           <div className='dates-tentoonstellingen'>
             <div className='tentoonstelling'>
-              <h1 className='tentoonstelling-title'>Metaflora</h1>
-              <p className='tentoonstelling-desc'>Een tentoonstelling over bloemen</p>
+              <a className='tentoonstelling-title'>&rarr; Metafloristiek:  22.04.16 - 31.10.18</a>
+              <p className='tentoonstelling-desc'>"Wegdromen in een denkbeeldige natuur"</p>
             </div>
             <div className='tentoonstelling'>
-              <h1 className='tentoonstelling-title'>Muurkladder</h1>
-              <p className='tentoonstelling-desc'>Een tentoonstelling over muren bekladderen</p>
+              <a className='tentoonstelling-title'>&rarr; Restauratie Lam Gods:  01.10.12 - 31.12.19</a>
+              <p className='tentoonstelling-desc'>Sinds 2012 worden de panelen van het Lam Gods
+gerestaureerd in het MSK.</p>
             </div>
             <div className='tentoonstelling'>
-              <h1 className='tentoonstelling-title'>Herstelling van Lam Gods</h1>
-              <p className='tentoonstelling-desc'>Ja vree wijs, maar je mag geen fotos nemen</p>
+              <a className='tentoonstelling-title'>&rarr; Written Room:  11.02.17 - 31.12.18</a>
+              <p className='tentoonstelling-desc'>Door Iraanse kunstenaar Parastou Forouhar</p>
             </div>
-            <a className='button-dark' href='https://www.mskgent.be/nl/tentoonstellingen' target='_blank'>Meer tentoonstellingen &rarr;</a>
           </div>
+          <a className='button-dark' href='https://www.mskgent.be/nl/tentoonstellingen' target='_blank'>Meer tentoonstellingen &rarr;</a>
         </div>
-        <img className='tentoonstelling-img'></img>
+        <img className='tentoonstelling-img' src='../../assets/img/metafloristiek.png' height='475'></img>
       </section>
       <section className='stats'>
         <div className='statistic'>
           {/* <!-- svg kan eventueel ook --> */}
           <img className='stats-img'></img>
-          <p className='stats-txt'>123 matches</p>
+          <p className='stats-txt'>1500 matches</p>
         </div>
         <div className='statistic'>
           {/* <!-- svg kan eventueel ook --> */}
           <img className='stats-img'></img>
-          <p className='stats-txt'>123 gebruikers</p>
+          <p className='stats-txt'>1700 gebruikers</p>
         </div>
         <div className='statistic'>
           {/* <!-- svg kan eventueel ook --> */}
           <img className='stats-img'></img>
-          <p className='stats-txt'>123 buddy visits</p>
+          <p className='stats-txt'>710 buddy visits</p>
         </div>
       </section>
       <section className='app'>
