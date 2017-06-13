@@ -25,7 +25,7 @@ const Home = () => {
           <div className='dates-tentoonstellingen'>
             <div className='tentoonstelling'>
               <a className='tentoonstelling-title'>&rarr; Metafloristiek:  22.04.16 - 31.10.18</a>
-              <p className='tentoonstelling-desc'>"Wegdromen in een denkbeeldige natuur"</p>
+              <p className='tentoonstelling-desc'>Wegdromen in een denkbeeldige natuur</p>
             </div>
             <div className='tentoonstelling'>
               <a className='tentoonstelling-title'>&rarr; Restauratie Lam Gods:  01.10.12 - 31.12.19</a>
@@ -43,32 +43,32 @@ gerestaureerd in het MSK.</p>
       </section>
       <section className='stats'>
         <div className='statistic'>
-          {/* <!-- svg kan eventueel ook --> */}
-          <img className='stats-img'></img>
-          <p className='stats-txt'>1500 matches</p>
-        </div>
-        <div className='statistic'>
-          {/* <!-- svg kan eventueel ook --> */}
-          <img className='stats-img'></img>
+          <img className='stats-img' src='../../assets/svg/people-icon.svg' height='30'></img>
           <p className='stats-txt'>1700 gebruikers</p>
         </div>
         <div className='statistic'>
-          {/* <!-- svg kan eventueel ook --> */}
-          <img className='stats-img'></img>
+          <img className='stats-img' src='../../assets/svg/match-icon.svg' height='30'></img>
+          <p className='stats-txt'>1500 matches</p>
+        </div>
+        <div className='statistic'>
+          <img className='stats-img' src='../../assets/svg/painting-icon.svg' height='30'></img>
           <p className='stats-txt'>710 buddy visits</p>
         </div>
       </section>
       <section className='app'>
-        <img className='app-image'></img>
+        <img className='app-image' src='../../assets/img/app-img.png'></img>
         <div className='app-text'>
           <h1 className='app-title'>Wil je meer?</h1>
           <p>Liep je vorige bezoek aan het MSK uit op een flater? Download de Kunst.klik app en zoek een nieuwe buddy!</p>
           <div className='appstore'>
-            <img className='applestore'></img>
-            <img className='googlestore'></img>
+            <img className='applestore' src='../../assets/img/appstore.jpg' height='40'></img>
+            <img className='googlestore' src='../../assets/img/playstore.jpg' height='40'></img>
           </div>
         </div>
       </section>
+      <footer className='footer'>
+        <p>hey</p>
+      </footer>
     </div>
   );
 };

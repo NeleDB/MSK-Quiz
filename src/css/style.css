@@ -146,8 +146,7 @@ a.tentoonstelling-title {
 .button-dark {
   background-image: url(../assets/svg/btn-dark-bg.svg);
   background-size: cover;
-  padding: .5rem 2rem;
-  font-size: 1.8rem;
+  padding: .7rem 1.4rem;
   color: white;
 
   &:hover {
@@ -163,7 +162,7 @@ a.tentoonstelling-title {
   margin-top: 10rem;
   display: flex;
   justify-content: space-around;
-  padding: 3rem;
+  padding: 5rem;
 }
 
 .stats-txt {
@@ -172,5 +171,44 @@ a.tentoonstelling-title {
 
 .app {
   display: flex;
+  justify-content: space-around;
+  margin-top: 7rem;
+  width: 90vw;
+}
+
+.statistic {
+  display: flex;
   justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.stats-img {
+  margin-bottom: 2rem;
+}
+
+.app-title {
+  margin-bottom: 3rem;
+
+  &::after {
+    content: url(../assets/svg/decoration.svg);
+    height: 100%;
+    padding-left: 1.5rem;
+  }
+}
+
+.appstore {
+  margin-top: 3rem;
+}
+
+.app-text {
+  width: 40rem;
+  margin-left: 12rem;
+}
+
+.app-image {
+  margin-left: 14rem;
+}
+
+.footer {
+  background-color: var(--main-red);
 }
