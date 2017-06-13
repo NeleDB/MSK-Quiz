@@ -221,6 +221,7 @@ a.tentoonstelling-title:hover {
   transition: color 100ms;
   transition-timing-function: ease-in-out;
   color: #ff493b;
+  cursor: pointer;
 }
 
 .tentoonstelling-desc {

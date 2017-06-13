@@ -1,8 +1,13 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import {Link} from 'react-router-dom';
+import expoData from '../../assets/data/expositions.json';
+import Expo from '../components/Expo/';
+import {inject, observer} from 'mobx-react';
+import {string} from 'prop-types';
 
-const Home = () => {
+
+const Home = ({currentImage}) => {
 
   return (
     <div>
@@ -23,23 +28,13 @@ const Home = () => {
         <div className='dates-text'>
           <h1 className='date-title'>Neem je match <br />mee naar één van <br />deze tentoonstellingen</h1>
           <div className='dates-tentoonstellingen'>
-            <div className='tentoonstelling'>
-              <a className='tentoonstelling-title'>&rarr; Metafloristiek:  22.04.16 - 31.10.18</a>
-              <p className='tentoonstelling-desc'>Wegdromen in een denkbeeldige natuur</p>
-            </div>
-            <div className='tentoonstelling'>
-              <a className='tentoonstelling-title'>&rarr; Restauratie Lam Gods:  01.10.12 - 31.12.19</a>
-              <p className='tentoonstelling-desc'>Sinds 2012 worden de panelen van het Lam Gods
-gerestaureerd in het MSK.</p>
-            </div>
-            <div className='tentoonstelling'>
-              <a className='tentoonstelling-title'>&rarr; Written Room:  11.02.17 - 31.12.18</a>
-              <p className='tentoonstelling-desc'>Door Iraanse kunstenaar Parastou Forouhar</p>
-            </div>
+            {expoData.expositions.map(expo => (
+              <Expo key={expo.id} {...expo} />
+            ))}
           </div>
           <a className='button-dark' href='https://www.mskgent.be/nl/tentoonstellingen' target='_blank'>Meer tentoonstellingen &rarr;</a>
         </div>
-        <img className='tentoonstelling-img' src='../../assets/img/metafloristiek.png' height='475'></img>
+        <img className='tentoonstelling-img' src={`../../assets/img/${currentImage}.png`} height='475'></img>
       </section>
       <section className='stats'>
         <div className='statistic'>
@@ -73,4 +68,14 @@ gerestaureerd in het MSK.</p>
   );
 };
 
-export default Home;
+Home.propTypes = {
+  currentImage: string.isRequired
+};
+
+export default inject(
+  ({store}) => {
+    return {currentImage: store.currentImage};
+  }
+)(
+  observer(Home)
+);

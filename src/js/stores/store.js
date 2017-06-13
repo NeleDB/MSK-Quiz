@@ -27,6 +27,9 @@ class Store {
   @observable
   lastAnswer = false;
 
+  @observable
+  currentImage = `metafloristiek`;
+
   @action
   nextQuestion = () => {
     this.answers.push(this.selectedAnswer);
@@ -47,6 +50,11 @@ class Store {
   @action
   handleEmail = email => {
     participantsAPI.create(this.answers, email).then(a => console.log(a));
+  }
+
+  @action
+  setImage = img => {
+    this.currentImage = img;
   }
 
 }
