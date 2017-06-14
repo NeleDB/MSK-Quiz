@@ -24,7 +24,7 @@ const Send = ({handleEmail, answers}) => {
 
   return (
     <div>
-      <h1>Vul jouw email adres en wij zoeken voor jou je ideale match!</h1>
+      <h1>Vul jouw email adres in en wij zoeken voor jou je ideale match!</h1>
       <form className='add' onSubmit={handleSubmit}>
         <input type='email' ref={$el => $email = $el} />
         <input
@@ -33,7 +33,7 @@ const Send = ({handleEmail, answers}) => {
           className='add-submit'
           />
       </form>
-      <h2>Uitslag</h2>
+      <h2>Resultaat</h2>
       {
         answers.map(a =>
           <Explain key={a} content={dataAnwers(a).uitleg} />

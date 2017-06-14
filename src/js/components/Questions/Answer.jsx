@@ -12,7 +12,7 @@ const Answer = ({antwoord, handleAnswer}) => {
 
   return (
     <li onClick={handleClickAnswer}>
-      {antwoord}
+      <img src={`../../../assets/img/${antwoord}.png`} />
     </li>
   );
 };

@@ -13,7 +13,7 @@ const Answers = ({antwoorden, nextQuestion, selectedAnswer}) => {
 
   return (
     <div>
-      <ul>
+      <ul className='answer-container'>
         {
           antwoorden.map(a => (
             <Answer key={antwoorden.indexOf(a)} antwoord={a.id} />
