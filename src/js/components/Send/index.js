@@ -24,21 +24,28 @@ const Send = ({handleEmail, answers}) => {
 
   return (
     <div>
-      <h1>Vul jouw email adres in en wij zoeken voor jou je ideale match!</h1>
-      <form className='add' onSubmit={handleSubmit}>
-        <input type='email' ref={$el => $email = $el} />
-        <input
-          type='submit'
-          value='Add'
-          className='add-submit'
-          />
-      </form>
-      <h2>Resultaat</h2>
-      {
-        answers.map(a =>
-          <Explain key={a} content={dataAnwers(a).uitleg} />
-        )
-      }
+      <header className='quiz-header'>
+        <div className='logo'>
+          <h1 className='hidden'>Kunst.klik</h1>
+        </div>
+      </header>
+      <div className='question-container'>
+        <h1 className='result'>Dit is jouw resultaat!</h1>
+        {
+          answers.map(a =>
+            <Explain key={a} content={dataAnwers(a).uitleg} />
+          )
+        }
+        <h1>Vul jouw email-adres in en wij zoeken voor jou de ideale match!</h1>
+        <form className='add' onSubmit={handleSubmit}>
+          <input type='email' ref={$el => $email = $el} />
+          <input
+            type='submit'
+            value='Add'
+            className='add-submit'
+            />
+        </form>
+      </div>
     </div>
   );
 };

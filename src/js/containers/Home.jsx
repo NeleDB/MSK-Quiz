@@ -19,7 +19,7 @@ const Home = ({currentImage}) => {
           <img className='fold-img' src='../../assets/img/header-img.png' />
           <div className='fold-text'>
             <h1 className='fold-title'>Heb jij jouw museum maatje al gevonden?</h1>
-            <Link className='button-light' to='/quiz'>Wie zoekt die vindt &rarr;</Link>
+            <Link className='button-light' to='/intro'>Wie zoekt die vindt &rarr;</Link>
           </div>
           <img className='scroll-img'></img>
         </div>

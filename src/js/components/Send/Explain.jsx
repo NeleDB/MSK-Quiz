@@ -3,7 +3,7 @@ import {string} from 'prop-types';
 
 const Explain = ({content}) => {
   return (
-    <p>{content}</p>
+    <p className='result-text'>{content}</p>
   );
 };
 

@@ -483,4 +483,56 @@ a.tentoonstelling-title:hover {
   }
 }
 
+.question-container {
+  margin-top: 50px;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  text-align: center;
+}
+
+.answer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quiz-img {
+  margin: 20px;
+  margin: 2rem
+}
+
+.quiz-img:hover {
+  cursor: pointer;
+}
+
+.selected {
+  background: #ff493b;
+}
+
+.button {
+  margin-top: 30px;
+  margin-top: 3rem;
+  border: none;
+  padding: 10px 30px;
+  padding: 1rem 3rem;
+}
+
+.result-text {
+  max-width: 90vw;
+  text-align: left;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=style.css.map*/
