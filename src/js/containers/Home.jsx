@@ -27,6 +27,7 @@ const Home = ({currentImage}) => {
       <section className='dates'>
         <div className='dates-text'>
           <h1 className='date-title'>Neem je match <br />mee naar één van <br />deze tentoonstellingen</h1>
+          <img className='line' src='../../assets/svg/line.svg'></img>
           <div className='dates-tentoonstellingen'>
             {expoData.expositions.map(expo => (
               <Expo key={expo.id} {...expo} />
@@ -54,7 +55,8 @@ const Home = ({currentImage}) => {
         <img className='app-image' src='../../assets/img/app-img.png'></img>
         <div className='app-text'>
           <h1 className='app-title'>Wil je meer?</h1>
-          <p>Liep je vorige bezoek aan het MSK uit op een flater? Download de Kunst.klik app en zoek een nieuwe buddy!</p>
+          <img className='line' src='../../assets/svg/line.svg'></img>
+          <p className='app-txt'>Liep je vorige bezoek aan het MSK uit op een flater? Download de Kunst.klik app en zoek een nieuwe buddy!</p>
           <div className='appstore'>
             <img className='applestore' src='../../assets/img/appstore.jpg' height='40'></img>
             <img className='googlestore' src='../../assets/img/playstore.jpg' height='40'></img>
@@ -62,7 +64,9 @@ const Home = ({currentImage}) => {
         </div>
       </section>
       <footer className='footer'>
-        <p>hey</p>
+        <address>
+
+        </address>
       </footer>
     </div>
   );

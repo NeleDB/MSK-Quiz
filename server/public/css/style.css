@@ -91,7 +91,7 @@ a {
   position: relative;
   z-index: 12;
   background-image: url(/assets/svg/logo-site.svg);
-  background-size: 10%;
+  background-size: 15rem;
   background-repeat: no-repeat;
   height: 100px;
   height: 10rem;
@@ -141,8 +141,8 @@ a {
 .fold-text {
   margin-bottom: 150px;
   margin-bottom: 15rem;
-  margin-left: 50px;
-  margin-left: 5rem;
+  margin-left: 70px;
+  margin-left: 7rem;
   width: 270px;
   width: 27rem;
 }
@@ -163,8 +163,8 @@ a {
 .fold-img {
   padding-top: -10px;
   padding-top: -1rem;
-  margin-left: -80px;
-  margin-left: -8rem;
+  margin-left: -150px;
+  margin-left: -15rem;
 }
 
 .dates {
@@ -174,8 +174,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 50px;
-  margin-top: 5rem;
+  margin-top: 80px;
+  margin-top: 8rem;
 }
 
 .date-title {
@@ -196,18 +196,17 @@ a {
 }
 
 .line {
-  border-bottom: 5px solid black;
-  border-bottom: .5rem solid black;
+  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .dates-text {
-  padding-left: 200px;
-  padding-left: 20rem;
+  padding-left: 15vw;
 }
 
 .tentoonstelling {
-  margin-top: 25px;
-  margin-top: 2.5rem;
+  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 a.tentoonstelling-title {
@@ -253,19 +252,22 @@ a.tentoonstelling-title:hover {
 
 .stats {
   background-color: #ff493b;
-  margin-top: 100px;
-  margin-top: 10rem;
+  margin-top: 130px;
+  margin-top: 13rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 50px;
-  padding: 5rem;
+  padding: 70px;
+  padding: 7rem;
 }
 
 .stats-txt {
   color: white;
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .app {
@@ -274,9 +276,15 @@ a.tentoonstelling-title:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 70px;
-  margin-top: 7rem;
+  margin-top: 100px;
+  margin-top: 10rem;
   width: 90vw;
+}
+
+.app-txt {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .statistic {
@@ -293,8 +301,8 @@ a.tentoonstelling-title:hover {
 }
 
 .stats-img {
-  margin-bottom: 20px;
-  margin-bottom: 2rem;
+  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
 }
 
 .app-title {
@@ -319,15 +327,68 @@ a.tentoonstelling-title:hover {
   width: 40rem;
   margin-left: 120px;
   margin-left: 12rem;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .app-image {
   margin-left: 140px;
   margin-left: 14rem;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .footer {
   background-color: #ff493b;
+}
+
+@media (max-width: 830px) {
+
+  .tentoonstelling-img {
+    display: none;
+  }
+}
+
+@media (max-width: 630px) {
+
+  .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 7rem 0;
+  }
+
+  .statistic {
+    padding: 3rem;
+  }
+
+  .app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+
+  .app-image {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+
+  .logo {
+    height: 10rem;
+    background-size: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map*/

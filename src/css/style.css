@@ -32,7 +32,7 @@ a {
   position: relative;
   z-index: 12;
   background-image: url(../assets/svg/logo-site.svg);
-  background-size: 10%;
+  background-size: 15rem;
   background-repeat: no-repeat;
   height: 10rem;
   margin-left: 10rem;
@@ -71,7 +71,7 @@ a {
 
 .fold-text {
   margin-bottom: 15rem;
-  margin-left: 5rem;
+  margin-left: 7rem;
   width: 27rem;
 }
 
@@ -88,13 +88,13 @@ a {
 
 .fold-img {
   padding-top: -1rem;
-  margin-left: -8rem;
+  margin-left: -15rem;
 }
 
 .dates {
   display: flex;
   justify-content: space-between;
-  margin-top: 5rem;
+  margin-top: 8rem;
 }
 
 .date-title {
@@ -111,15 +111,15 @@ a {
 }
 
 .line {
-  border-bottom: .5rem solid black;
+  margin-bottom: 5rem;
 }
 
 .dates-text {
-  padding-left: 20rem;
+  padding-left: 15vw;
 }
 
 .tentoonstelling {
-  margin-top: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 a.tentoonstelling-title {
@@ -160,21 +160,28 @@ a.tentoonstelling-title {
 
 .stats {
   background-color: var(--main-red);
-  margin-top: 10rem;
+  margin-top: 13rem;
   display: flex;
   justify-content: space-around;
-  padding: 5rem;
+  padding: 7rem;
 }
 
 .stats-txt {
   color: white;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .app {
   display: flex;
   justify-content: space-around;
-  margin-top: 7rem;
+  margin-top: 10rem;
   width: 90vw;
+}
+
+.app-txt {
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .statistic {
@@ -184,7 +191,7 @@ a.tentoonstelling-title {
 }
 
 .stats-img {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .app-title {
@@ -204,12 +211,49 @@ a.tentoonstelling-title {
 .app-text {
   width: 40rem;
   margin-left: 12rem;
+  order: 2;
 }
 
 .app-image {
   margin-left: 14rem;
+  order: 1;
 }
 
 .footer {
   background-color: var(--main-red);
+}
+
+@media (max-width: 830px) {
+
+  .tentoonstelling-img {
+    display: none;
+  }
+}
+
+@media (max-width: 630px) {
+
+  .stats {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 7rem 0;
+  }
+
+  .statistic {
+    padding: 3rem;
+  }
+
+  .app {
+    flex-flow: column wrap;
+  }
+
+  .app-image {
+    order: 5;
+  }
+
+  .logo {
+    height: 10rem;
+    background-size: 30%;
+  }
 }
