@@ -35,9 +35,11 @@ const Send = ({handleEmail, answers, email, checkEmail, beginAgain}) => {
   return (
     <div>
       <header className='quiz-header'>
-        <div className='logo quiz-logo logo-zwart'>
-          <h1 className='hidden'>Kunst.klik</h1>
-        </div>
+        <Link to='/'>
+          <div className='logo quiz-logo logo-zwart'>
+            <h1 className='hidden'>Kunst.klik</h1>
+          </div>
+        </Link>
       </header>
       <div className='question-container'>
         <div className='email-div' >
