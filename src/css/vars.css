@@ -3,6 +3,6 @@
   --shadow-red2: color(var(--main-red) lightness(60%));
   --shadow-red: color(var(--main-red) lightness(58%));
   --deep-red: #e00000;
-  --main-pink: #ffeBe7;
+  --main-pink: #ffebe7;
   --main-blue: #494dc9;
 }

@@ -3,7 +3,7 @@ import {string} from 'prop-types';
 
 const Question = ({vraag}) => {
   return (
-    <h1>{vraag}</h1>
+    <h1 className='quiz-title'>{vraag}</h1>
   );
 };
 

@@ -22,6 +22,9 @@ class Store {
   @observable
   currentImage = `metafloristiek`;
 
+  @observable
+  email = true;
+
   @action
   nextQuestion = () => {
     this.answers.push(this.selectedAnswer);
@@ -47,6 +50,22 @@ class Store {
   @action
   setImage = img => {
     this.currentImage = img;
+  }
+
+  @action
+  checkEmail = email => {
+    if (email === ``) {
+      this.email = false;
+    } else {
+      this.email = true;
+    }
+  }
+
+  @action
+  beginAgain = () => {
+    this.currentQuestion = 0;
+    this.answers = [];
+    this.lastAnswer = false;
   }
 
 }
