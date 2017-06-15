@@ -123,7 +123,7 @@ a {
   margin-bottom: 3rem;
 }
 
-a.tentoonstelling-title {
+.tentoonstelling-title {
   font-family: freightsemibold;
   font-size: 2rem;
   color: black;
@@ -249,6 +249,7 @@ a.tentoonstelling-title {
 
 .answer-container {
   display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 1120px) {
@@ -348,16 +349,11 @@ a.tentoonstelling-title {
   text-align: center;
 }
 
-.answer-container {
-  display: flex;
-  justify-content: center;
-}
-
 .quiz-img {
   margin: 2rem;
 
   &:hover {
-    cursor:pointer;
+    cursor: pointer;
   }
 }
 
