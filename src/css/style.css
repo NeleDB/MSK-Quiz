@@ -32,9 +32,10 @@ a {
   position: relative;
   z-index: 12;
   background-image: url(../assets/svg/logo-site.svg);
-  background-size: 15rem;
+  background-size: 100%;
   background-repeat: no-repeat;
-  height: 10rem;
+  width: 10rem;
+  height: 8rem;
   margin-left: 10rem;
   padding-top: 3rem;
 }
@@ -61,6 +62,12 @@ a {
     color: white;
     box-shadow: .5rem .8rem 2rem var(--shadow-red2);
   }
+}
+
+.button {
+  margin-top: 3rem;
+  border: none;
+  padding: 1rem 3rem;
 }
 
 .fold {
@@ -150,12 +157,15 @@ a {
   background-size: cover;
   padding: .7rem 1.4rem;
   color: white;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
 
   &:hover {
     transition: background-image 100ms;
     transition-timing-function: ease-in;
     background-image: url(../assets/svg/btn-hover.svg);
     color: white;
+    cursor: pointer;
   }
 }
 
@@ -247,9 +257,107 @@ a {
 
 /*QUIZ*/
 
+.quiz-intro {
+  width: 60vw;
+  margin: 15rem auto;
+  text-align: center;
+
+  &-title {
+    margin-bottom: 1rem;
+  }
+
+  &-explain {
+    width: 40vw;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+
+}
+
+.quiz-button {
+  width: 20rem;
+  margin-bottom: 10rem;
+}
+
 .answer-container {
   display: flex;
   justify-content: center;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.question-container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+.quiz-img {
+  margin: 2rem;
+  width: 40vw;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.selected {
+  background: var(--main-red);
+}
+
+.result-text {
+  text-align: left;
+  margin: .6rem;
+}
+
+.result-div {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.quiz-logo {
+  margin-top: 2rem;
+}
+
+.email-title {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.email-input {
+  width: 20vw;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-submit {
+  width: 20rem;
+  border: none;
+}
+
+.error {
+  color: var(--deep-red);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.return-button {
+  text-decoration: underline;
+  margin-bottom: 10rem;
+  color: black;
+  margin-top: 5rem;
+  font-size: 2.1rem;
 }
 
 @media (max-width: 1120px) {
@@ -275,10 +383,6 @@ a {
     background-blend-mode: overlay;
   }
 
-  .logo {
-    width: 45rem;
-  }
-
   .fold-img {
     display: none;
   }
@@ -297,6 +401,29 @@ a {
     }
 
   }
+
+  .quiz-intro {
+    width: 80vw;
+    margin-top: 10rem;
+
+    &-explain {
+      width: 75vw;
+      margin: auto;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .result-div {
+    width: 90vw;
+  }
+
+  .result-text {
+    width: 80vw;
+  }
+
+  .email-input {
+    width: 40vw;
+  }
 }
 
 @media (max-width: 630px) {
@@ -306,7 +433,8 @@ a {
     flex-flow: column wrap;
     justify-content: center;
     text-align: center;
-    padding: 7rem 0;
+    padding: 2rem 0;
+    margin-top: 7rem;
   }
 
   .statistic {
@@ -315,6 +443,8 @@ a {
 
   .app {
     flex-flow: column wrap;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
   }
 
   .app-image {
@@ -332,43 +462,65 @@ a {
   }
 
   .logo {
-    height: 10rem;
-    background-size: 30%;
+    margin-left: 2rem;
+  }
+
+  .fold-text {
+    margin: 1rem auto 5rem;
   }
 
   .tentoonstelling {
     width: 80vw;
   }
-}
 
-.question-container {
-  margin-top: 5rem;
-  display: flex;
-  justify-content: center;
-  flex-flow: column nowrap;
-  text-align: center;
-}
-
-.quiz-img {
-  margin: 2rem;
-
-  &:hover {
-    cursor: pointer;
+  .question-container {
+    margin-top: 2rem;
   }
 }
 
-.selected {
-  background: var(--main-red);
-}
+@media (max-width: 400px) {
 
-.button {
-  margin-top: 3rem;
-  border: none;
-  padding: 1rem 3rem;
-}
+  .dates {
+    margin-top: 5rem;
+  }
 
-.result-text {
-  max-width: 90vw;
-  text-align: left;
-  margin: 0 auto;
+  .date-title {
+    width: 80vw;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-top: 1rem;
+  }
+
+  .answer-container {
+    flex-direction: column;
+  }
+
+  .quiz-img {
+    width: 80vw;
+  }
+
+  .quiz-title {
+    font-size: 2.1rem;
+    text-align: left;
+    margin-left: 4rem;
+  }
+
+  .quiz-button {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .email-title, .result {
+    font-size: 2.1rem;
+    line-height: 2.1rem;
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  .email-form {
+    align-items: flex-start;
+    width: 87vw;
+    margin-top: 3rem;
+  }
+
 }

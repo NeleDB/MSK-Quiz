@@ -20,7 +20,7 @@ const Answers = ({antwoorden, nextQuestion, selectedAnswer}) => {
           ))
         }
       </ul>
-      <button className='button-dark button' onClick={handleClickNext} disabled={selectedAnswer === `` ? `disabled` : ``}>Next Question</button>
+      <button className='button-dark quiz-button' onClick={handleClickNext} disabled={selectedAnswer === `` ? `disabled` : ``}>Next Question</button>
     </div>
   );
 };
