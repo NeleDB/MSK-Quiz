@@ -4,14 +4,6 @@ import data from '../../assets/data/quiz.json';
 
 class Store {
 
-  init = () => {
-    participantsAPI.read().then(d => console.log(d.participants));
-  }
-
-  constructor() {
-    this.init();
-  }
-
   @observable
   name = `msk-quiz`
 
@@ -49,7 +41,7 @@ class Store {
 
   @action
   handleEmail = email => {
-    participantsAPI.create(this.answers, email).then(a => console.log(a));
+    participantsAPI.create(this.answers, email);
   }
 
   @action

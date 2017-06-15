@@ -19,7 +19,7 @@ const Home = ({currentImage}) => {
           <img className='fold-img' src='../../assets/img/header-img.png' />
           <div className='fold-text'>
             <h1 className='fold-title'>Heb jij jouw museum maatje al gevonden?</h1>
-            <Link className='button-light' to='/quiz'>Wie zoekt die vindt &rarr;</Link>
+            <Link className='button-light' to='/intro'>Wie zoekt die vindt &rarr;</Link>
           </div>
           <img className='scroll-img'></img>
         </div>
@@ -27,6 +27,7 @@ const Home = ({currentImage}) => {
       <section className='dates'>
         <div className='dates-text'>
           <h1 className='date-title'>Neem je match <br />mee naar één van <br />deze tentoonstellingen</h1>
+          <img className='line' src='../../assets/svg/line.svg'></img>
           <div className='dates-tentoonstellingen'>
             {expoData.expositions.map(expo => (
               <Expo key={expo.id} {...expo} />
@@ -51,10 +52,13 @@ const Home = ({currentImage}) => {
         </div>
       </section>
       <section className='app'>
-        <img className='app-image' src='../../assets/img/app-img.png'></img>
+        <img className='app-image' src='../../assets/img/app-img.png' width='242' height='478'></img>
+        <img className='app-icon' src='../../assets/img/app-icon.png' width='150' height='150'></img>
+
         <div className='app-text'>
           <h1 className='app-title'>Wil je meer?</h1>
-          <p>Liep je vorige bezoek aan het MSK uit op een flater? Download de Kunst.klik app en zoek een nieuwe buddy!</p>
+          <img className='line' src='../../assets/svg/line.svg' ></img>
+          <p className='app-txt'>Liep je vorige bezoek aan het MSK uit op een flater? Download de Kunst.klik app en zoek een nieuwe buddy!</p>
           <div className='appstore'>
             <img className='applestore' src='../../assets/img/appstore.jpg' height='40'></img>
             <img className='googlestore' src='../../assets/img/playstore.jpg' height='40'></img>
@@ -62,7 +66,12 @@ const Home = ({currentImage}) => {
         </div>
       </section>
       <footer className='footer'>
-        <p>hey</p>
+        <img src='../../assets/img/msk-wit.png' width='75' height='66' />
+        <address className='address'>
+          Fernand Scribedreef 1 <br />
+          +32 (0)9/323.67.00 <br />
+          <a className='email' href='mailto:museum.msk@gent.be'>museum.msk@gent.be</a>
+        </address>
       </footer>
     </div>
   );

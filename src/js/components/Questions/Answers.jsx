@@ -13,14 +13,14 @@ const Answers = ({antwoorden, nextQuestion, selectedAnswer}) => {
 
   return (
     <div>
-      <ul>
+      <ul className='answer-container'>
         {
           antwoorden.map(a => (
             <Answer key={antwoorden.indexOf(a)} antwoord={a.id} />
           ))
         }
       </ul>
-      <button onClick={handleClickNext} disabled={selectedAnswer === `` ? `disabled` : ``}>Next Question</button>
+      <button className='button-dark button' onClick={handleClickNext} disabled={selectedAnswer === `` ? `disabled` : ``}>Next Question</button>
     </div>
   );
 };

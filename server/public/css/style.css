@@ -91,7 +91,7 @@ a {
   position: relative;
   z-index: 12;
   background-image: url(/assets/svg/logo-site.svg);
-  background-size: 10%;
+  background-size: 15rem;
   background-repeat: no-repeat;
   height: 100px;
   height: 10rem;
@@ -141,8 +141,8 @@ a {
 .fold-text {
   margin-bottom: 150px;
   margin-bottom: 15rem;
-  margin-left: 50px;
-  margin-left: 5rem;
+  margin-left: 70px;
+  margin-left: 7rem;
   width: 270px;
   width: 27rem;
 }
@@ -163,8 +163,8 @@ a {
 .fold-img {
   padding-top: -10px;
   padding-top: -1rem;
-  margin-left: -80px;
-  margin-left: -8rem;
+  margin-left: -150px;
+  margin-left: -15rem;
 }
 
 .dates {
@@ -174,8 +174,11 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 50px;
-  margin-top: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 80px;
+  margin-top: 8rem;
 }
 
 .date-title {
@@ -196,18 +199,17 @@ a {
 }
 
 .line {
-  border-bottom: 5px solid black;
-  border-bottom: .5rem solid black;
+  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .dates-text {
-  padding-left: 200px;
-  padding-left: 20rem;
+  padding-left: 15vw;
 }
 
 .tentoonstelling {
-  margin-top: 25px;
-  margin-top: 2.5rem;
+  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 a.tentoonstelling-title {
@@ -253,19 +255,22 @@ a.tentoonstelling-title:hover {
 
 .stats {
   background-color: #ff493b;
-  margin-top: 100px;
-  margin-top: 10rem;
+  margin-top: 130px;
+  margin-top: 13rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 50px;
-  padding: 5rem;
+  padding: 70px;
+  padding: 7rem;
 }
 
 .stats-txt {
   color: white;
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .app {
@@ -274,9 +279,15 @@ a.tentoonstelling-title:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 70px;
-  margin-top: 7rem;
+  margin-top: 100px;
+  margin-top: 10rem;
   width: 90vw;
+}
+
+.app-txt {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .statistic {
@@ -293,8 +304,8 @@ a.tentoonstelling-title:hover {
 }
 
 .stats-img {
-  margin-bottom: 20px;
-  margin-bottom: 2rem;
+  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
 }
 
 .app-title {
@@ -319,15 +330,209 @@ a.tentoonstelling-title:hover {
   width: 40rem;
   margin-left: 120px;
   margin-left: 12rem;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .app-image {
   margin-left: 140px;
   margin-left: 14rem;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.app-icon {
+  display: none;
+}
+
+.applestore {
+  margin-right: 20px;
+  margin-right: 2rem;
 }
 
 .footer {
   background-color: #ff493b;
+  padding: 20px;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.address {
+  color: white;
+  text-align: right;
+}
+
+.email {
+  color: white;
+}
+
+/*QUIZ*/
+
+.answer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1120px) {
+
+  .tentoonstelling-img {
+    width: 35vw;
+    height: 100%;
+    padding-left: 2vw;
+  }
+}
+
+@media (max-width: 830px) {
+
+  .tentoonstelling-img {
+    display: none;
+  }
+
+  .header {
+    background: none;
+    background: url(/assets/img/bg-image.jpg), #ff493b;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: overlay;
+  }
+
+  .logo {
+    width: 45rem;
+  }
+
+  .fold-img {
+    display: none;
+  }
+
+  .app {
+    width: 90vw;
+    margin: 10rem auto
+
+  }
+
+  .app-text {
+    width: 40vw;
+    margin-left: 5rem;
+  }
+
+  .app-image {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 630px) {
+
+  .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 7rem 0;
+  }
+
+  .statistic {
+    padding: 3rem;
+  }
+
+  .app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+
+  .app-image {
+    display: none;
+  }
+
+  .app-icon {
+    display: block;
+    margin: 0 auto 5rem;
+  }
+
+  .app-text {
+    width: 70vw;
+    margin: 0 auto 5rem;
+  }
+
+  .logo {
+    height: 10rem;
+    background-size: 30%;
+  }
+
+  .tentoonstelling {
+    width: 80vw;
+  }
+}
+
+.question-container {
+  margin-top: 50px;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  text-align: center;
+}
+
+.answer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quiz-img {
+  margin: 20px;
+  margin: 2rem
+}
+
+.quiz-img:hover {
+  cursor: pointer;
+}
+
+.selected {
+  background: #ff493b;
+}
+
+.button {
+  margin-top: 30px;
+  margin-top: 3rem;
+  border: none;
+  padding: 10px 30px;
+  padding: 1rem 3rem;
+}
+
+.result-text {
+  max-width: 90vw;
+  text-align: left;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map*/

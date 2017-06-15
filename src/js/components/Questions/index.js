@@ -13,9 +13,15 @@ const Questions = ({id}) => {
   };
   return (
     <div>
-
-      <Question vraag={currentQuestion().vraag} />
-      <Answers antwoorden={currentQuestion().antwoorden} />
+      <header className='quiz-header'>
+        <div className='logo'>
+          <h1 className='hidden'>Kunst.klik</h1>
+        </div>
+      </header>
+      <div className='question-container'>
+        <Question vraag={currentQuestion().vraag} />
+        <Answers antwoorden={currentQuestion().antwoorden} />
+      </div>
     </div>
   );
 };

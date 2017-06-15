@@ -2,7 +2,7 @@
   "vragen": [
     {
       "id": 0,
-      "vraag": "Eet je liever een ijsje met spikkeltjes, of een vanille ijsje?",
+      "vraag": "Welk schilderij vind je het mooiste?",
       "antwoorden": [
         {
           "id": "A",
@@ -10,7 +10,7 @@
         },
         {
           "id": "B",
-          "uitleg": "Je gaat niet vaak zoeken naar details in een schilderij. Je zal u eerder baseren op de uitstraling en het verhaal van het schilderij dan op de details. Hierdoor mis je soms belangrijke elementen die van groot belang zijn om het verhaal te begrijpen."
+          "uitleg": "Je zoekt niet vaak naar details in een schilderij. Je zal je eerder baseren op de uitstraling en het verhaal van het schilderij dan op de details. Hierdoor mis je soms belangrijke elementen die van groot belang zijn om het verhaal te begrijpen."
 
         }
       ]
@@ -45,7 +45,7 @@
     },
     {
       "id": 3,
-      "vraag": "Hoe beluister jij het liefst je muziek?",
+      "vraag": "Welk beeld wil jij wel in je woonkamer?",
       "antwoorden": [
         {
           "id": "G",

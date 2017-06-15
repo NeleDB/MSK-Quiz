@@ -32,7 +32,7 @@ a {
   position: relative;
   z-index: 12;
   background-image: url(../assets/svg/logo-site.svg);
-  background-size: 10%;
+  background-size: 15rem;
   background-repeat: no-repeat;
   height: 10rem;
   margin-left: 10rem;
@@ -71,7 +71,7 @@ a {
 
 .fold-text {
   margin-bottom: 15rem;
-  margin-left: 5rem;
+  margin-left: 7rem;
   width: 27rem;
 }
 
@@ -88,13 +88,14 @@ a {
 
 .fold-img {
   padding-top: -1rem;
-  margin-left: -8rem;
+  margin-left: -15rem;
 }
 
 .dates {
   display: flex;
   justify-content: space-between;
-  margin-top: 5rem;
+  align-items: center;
+  margin-top: 8rem;
 }
 
 .date-title {
@@ -111,15 +112,15 @@ a {
 }
 
 .line {
-  border-bottom: .5rem solid black;
+  margin-bottom: 5rem;
 }
 
 .dates-text {
-  padding-left: 20rem;
+  padding-left: 15vw;
 }
 
 .tentoonstelling {
-  margin-top: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 a.tentoonstelling-title {
@@ -160,21 +161,28 @@ a.tentoonstelling-title {
 
 .stats {
   background-color: var(--main-red);
-  margin-top: 10rem;
+  margin-top: 13rem;
   display: flex;
   justify-content: space-around;
-  padding: 5rem;
+  padding: 7rem;
 }
 
 .stats-txt {
   color: white;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .app {
   display: flex;
   justify-content: space-around;
-  margin-top: 7rem;
+  margin-top: 10rem;
   width: 90vw;
+}
+
+.app-txt {
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .statistic {
@@ -184,7 +192,7 @@ a.tentoonstelling-title {
 }
 
 .stats-img {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .app-title {
@@ -204,12 +212,167 @@ a.tentoonstelling-title {
 .app-text {
   width: 40rem;
   margin-left: 12rem;
+  order: 2;
 }
 
 .app-image {
   margin-left: 14rem;
+  order: 1;
+}
+
+.app-icon {
+  display: none;
+}
+
+.applestore {
+  margin-right: 2rem;
 }
 
 .footer {
   background-color: var(--main-red);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address {
+  color: white;
+  text-align: right;
+}
+
+.email {
+  color: white;
+}
+
+/*QUIZ*/
+
+.answer-container {
+  display: flex;
+}
+
+@media (max-width: 1120px) {
+
+  .tentoonstelling-img {
+    width: 35vw;
+    height: 100%;
+    padding-left: 2vw;
+  }
+}
+
+@media (max-width: 830px) {
+
+  .tentoonstelling-img {
+    display: none;
+  }
+
+  .header {
+    background: none;
+    background: url(../assets/img/bg-image.jpg), var(--main-red);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: overlay;
+  }
+
+  .logo {
+    width: 45rem;
+  }
+
+  .fold-img {
+    display: none;
+  }
+
+  .app {
+    width: 90vw;
+    margin: 10rem auto;
+
+    &-text {
+      width: 40vw;
+      margin-left: 5rem;
+    }
+
+    &-image {
+      margin: 0 auto;
+    }
+
+  }
+}
+
+@media (max-width: 630px) {
+
+  .stats {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 7rem 0;
+  }
+
+  .statistic {
+    padding: 3rem;
+  }
+
+  .app {
+    flex-flow: column wrap;
+  }
+
+  .app-image {
+    display: none;
+  }
+
+  .app-icon {
+    display: block;
+    margin: 0 auto 5rem;
+  }
+
+  .app-text {
+    width: 70vw;
+    margin: 0 auto 5rem;
+  }
+
+  .logo {
+    height: 10rem;
+    background-size: 30%;
+  }
+
+  .tentoonstelling {
+    width: 80vw;
+  }
+}
+
+.question-container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+.answer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.quiz-img {
+  margin: 2rem;
+
+  &:hover {
+    cursor:pointer;
+  }
+}
+
+.selected {
+  background: var(--main-red);
+}
+
+.button {
+  margin-top: 3rem;
+  border: none;
+  padding: 1rem 3rem;
+}
+
+.result-text {
+  max-width: 90vw;
+  text-align: left;
+  margin: 0 auto;
 }

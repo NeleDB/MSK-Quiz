@@ -2,9 +2,8 @@ import React from 'react';
 import {string} from 'prop-types';
 
 const Explain = ({content}) => {
-  console.log(content);
   return (
-    <p>{content}</p>
+    <p className='result-text'>{content}</p>
   );
 };
 
