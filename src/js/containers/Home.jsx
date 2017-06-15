@@ -60,8 +60,8 @@ const Home = ({currentImage}) => {
           <img className='line' src='../../assets/svg/line.svg' ></img>
           <p className='app-txt'>Liep je vorige bezoek aan het MSK uit op een flater? Download de Kunst.klik app en zoek een nieuwe buddy!</p>
           <div className='appstore'>
-            <img className='applestore' src='../../assets/img/appstore.jpg' height='40'></img>
-            <img className='googlestore' src='../../assets/img/playstore.jpg' height='40'></img>
+            <img className='applestore' src='../../assets/img/appstore.png' height='40'></img>
+            <img className='googlestore' src='../../assets/img/playstore.png' height='40'></img>
           </div>
         </div>
       </section>

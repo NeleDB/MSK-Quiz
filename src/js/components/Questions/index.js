@@ -14,7 +14,7 @@ const Questions = ({id}) => {
   return (
     <div>
       <header className='quiz-header'>
-        <div className='quiz-logo logo'>
+        <div className='quiz-logo logo-zwart'>
           <h1 className='hidden'>Kunst.klik</h1>
         </div>
       </header>

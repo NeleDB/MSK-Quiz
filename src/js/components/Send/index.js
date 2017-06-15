@@ -35,33 +35,35 @@ const Send = ({handleEmail, answers, email, checkEmail, beginAgain}) => {
   return (
     <div>
       <header className='quiz-header'>
-        <div className='logo quiz-logo'>
+        <div className='logo quiz-logo logo-zwart'>
           <h1 className='hidden'>Kunst.klik</h1>
         </div>
       </header>
       <div className='question-container'>
-        <h1 className='result'>Dit is jouw resultaat!</h1>
+        <div className='email-div' >
+          <h1 className='email-title'>Vul jouw email-adres in en wij zoeken voor jou de ideale match!</h1>
+
+          <form className='email-form' onSubmit={handleSubmit}>
+
+            <label >Email-adres</label>
+            <input className='email-input' type='email' ref={$el => $email = $el} placeholder='naam@example.com' />
+            <p className={email === false ? `error` : `hidden`}>Vul je email-adres in</p>
+            <input
+              type='submit'
+              value='Verstuur'
+              className='button-dark email-submit'
+              />
+          </form>
+        </div>
         <div className='result-div'>
+          <h1 className='result'>Dit is jouw resultaat!</h1>
         {
           answers.map(a =>
             <Explain key={a} content={dataAnwers(a).uitleg} />
           )
         }
         </div>
-        <h1 className='email-title'>Vul jouw email-adres in en wij zoeken voor jou de ideale match!</h1>
-
-        <form className='email-form' onSubmit={handleSubmit}>
-
-          <label >Email adres</label>
-          <input className='email-input' type='email' ref={$el => $email = $el} placeholder='naam@example.com' />
-          <p className={email === false ? `error` : `hidden`}>Vul je email-adres in</p>
-          <input
-            type='submit'
-            value='Verstuur'
-            className='button-dark email-submit'
-            />
-        </form>
-        <Link to='/' className='return-button' onClick={handleClickBack}>Terug naar de website</Link>
+        <Link to='/' className='return-button button button-dark' onClick={handleClickBack}>Terug naar de website</Link>
       </div>
     </div>
   );
